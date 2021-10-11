@@ -1,3 +1,39 @@
+.whole-app {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding: 40px;
+  background-color: #bdc1c6;
+  border: 1px solid #dadde1;
+  margin-top: 30px;
+  border-radius: 5px;
+  height: 100%;
+}
 h1 {
-  color: red;
+  color: rgb(232, 234, 237);
+  display: block;
+  font-family: "Google Sans", Roboto, arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  height: 26px;
+  line-height: 26px;
+}
+.list1 {
+  list-style-type: none;
+  color: rgb(154, 160, 166);
+  font-family: Roboto, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+}
+.list2 {
+  list-style-type: none;
+  color: rgb(154, 160, 166);
+
+  font-family: Roboto, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 16px;
 }
