@@ -3,14 +3,14 @@
   margin: 0 auto;
   display: block;
   padding: 40px;
-  background-color: #bdc1c6;
   border: 1px solid #dadde1;
   margin-top: 30px;
   border-radius: 5px;
+
   height: 100%;
 }
 h1 {
-  color: rgb(232, 234, 237);
+  color: #bdc1c6;
   display: block;
   font-family: "Google Sans", Roboto, arial, sans-serif;
   font-size: 22px;
@@ -36,4 +36,29 @@ h1 {
   font-weight: 400;
   height: 16px;
   line-height: 16px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.whole-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.degree {
+  font-size: 50px;
+  position: relative;
+  bottom: -15px;
+}
+sup {
+  font-size: 16px;
+  position: relative;
+  top: -14px;
+}
+.celsius {
+  text-decoration: none;
+}
+.farh {
+  text-decoration: none;
 }

@@ -25,22 +25,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <div class="container">
+    <div class="whole-app-wrapper">
     <div class="whole-app">
       <h1>New York</h1>
       <ul class="list1">
         <li>Friday 05:00</li>
         <li>Clear</li>
       </ul>
-   
+      <br>
       <div class="row">
         <div class="col-6">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
           />
-          12°C|°F
+         <span class="degree"> 12</span><sup><a class="celsius" href="#">°C</a>|<a class="farh" href="#">°F</a></sup>
         </div>
         <div class="col-6">
-   
+        
           <ul class="list2">
             <li>Percipitation:0%</li>
             <li>Humidity:10%</li>
@@ -48,9 +49,8 @@
           </ul>
           </div>
         </div>
-      </div>
-    
-      <small>
+      </div> 
+      <small class="fotter">
         <a
           href="https://github.com/sanamkarki/WeatherApp-GoogleLike"
           target="_blank"
@@ -58,6 +58,7 @@
         >
         by Sanam Karki
       </small>
+    </div>
     </div>
   </div>
   <body>
