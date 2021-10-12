@@ -58,7 +58,7 @@ sup {
   position: relative;
   top: -14px;
 }
-.celsius {
+#celsciusId {
   text-decoration: none;
 }
 .farh {
