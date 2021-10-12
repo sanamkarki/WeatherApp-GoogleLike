@@ -17,6 +17,7 @@ h1 {
   font-weight: 400;
   height: 26px;
   line-height: 26px;
+  margin-top: -20px;
 }
 .list1 {
   list-style-type: none;
@@ -26,16 +27,18 @@ h1 {
   font-weight: 400;
   height: 20px;
   line-height: 20px;
+  text-transform: capitalize;
 }
 .list2 {
   list-style-type: none;
   color: rgb(154, 160, 166);
-
+  top: 2000px;
   font-family: Roboto, arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   height: 16px;
   line-height: 16px;
+  background-color: red;
 }
 ul {
   padding: 0;
