@@ -34,11 +34,10 @@ h1 {
   color: rgb(154, 160, 166);
   top: 2000px;
   font-family: Roboto, arial, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   height: 16px;
   line-height: 16px;
-  background-color: red;
 }
 ul {
   padding: 0;
