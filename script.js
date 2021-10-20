@@ -21,6 +21,27 @@ function formatDate(timestamp) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let weatherForecastDayElement = document.querySelector("#weatherForecastDay");
+  let FinalForecastValue = `<div class= "row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    FinalForecastValue =
+      FinalForecastValue +
+      `
+  <div class="col-2"> 
+  <div>${day}
+  <img  class="forecastLogo" src= "cloudy.png" width="50" height="50"/>
+  </div>
+  <div><span class="min-Temp">18°|</span><span class="min-Temp">14°</span></div>
+</div>
+
+ `;
+  });
+  FinalForecastValue = FinalForecastValue + `</div>`;
+  weatherForecastDayElement.innerHTML = FinalForecastValue;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -42,6 +63,7 @@ function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
   console.log(response.data.weather[0].icon);
 }
+
 function search(city) {
   let apiKey = "7ed26a6948c661d05fafe7355b41b2ec";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -78,3 +100,4 @@ function showCelsiusTemp(event) {
 let celsiusElement = document.querySelector("#celsciusId");
 celsiusElement.addEventListener("click", showCelsiusTemp);
 search("New York");
+displayForecast();
