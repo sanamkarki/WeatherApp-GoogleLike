@@ -102,8 +102,8 @@ function handleSubmit(event) {
 
 let searchFormElement = document.querySelector("#searchForm");
 searchFormElement.addEventListener("submit", handleSubmit);
-
-function showFahrenheitTemp(event) {
+search("New York");
+/*function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitValue = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
@@ -121,5 +121,4 @@ function showCelsiusTemp(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 let celsiusElement = document.querySelector("#celsciusId");
-celsiusElement.addEventListener("click", showCelsiusTemp);
-search("New York");
+celsiusElement.addEventListener("click", showCelsiusTemp);*/
